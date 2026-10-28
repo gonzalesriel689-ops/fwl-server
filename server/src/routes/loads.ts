@@ -30,7 +30,7 @@ loadsRouter.get("/", async (req, res) => {
       maxLoad: f.maxLoad,
       totalLoad,
       status,
-      assignments: f.assignments.map((a) => ({
+      assignments: f.assignments.map((a any:) => ({
         id: a.id,
         role: a.role,
         loadHours: a.loadHours,
