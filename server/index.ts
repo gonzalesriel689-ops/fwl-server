@@ -8,7 +8,7 @@ import { termsRouter } from "./routes/terms";
 import { sectionsRouter } from "./routes/sections";
 import { assignmentsRouter } from "./routes/assignments";
 import { loadsRouter } from "./routes/loads";
-import { requireAuth } from "./middleware/auth.js";
+import { requireAuth } from "./src/middleware/auth.js";
 
 const app = express();
 app.use(cors());
