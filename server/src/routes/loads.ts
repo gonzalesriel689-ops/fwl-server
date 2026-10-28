@@ -20,7 +20,7 @@ loadsRouter.get("/", async (req, res) => {
   });
 
   const loads = faculty.map((f:any) => {
-    const totalLoad = f.assignments.reduce((sum, a) => sum + a.loadHours, 0);
+    const totalLoad = f.assignments.reduce((sum: number, a:any) => sum + a.loadHours, 0);
     const status = totalLoad > f.maxLoad ? "over" : totalLoad === f.maxLoad ? "at" : "under";
     return {
       facultyId: f.id,
