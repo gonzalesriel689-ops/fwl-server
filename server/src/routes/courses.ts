@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { prisma } from "../lib/prisma";
-import { requireAdmin } from "../middleware/auth";
+import { requireAdmin } from "../middleware/auth.js";
 
 export const coursesRouter = Router();
 
